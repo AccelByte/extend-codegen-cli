@@ -1,0 +1,4 @@
+# data/config.yaml
+
+input: characters.json
+template: template-01.j2
