@@ -1,3 +1,5 @@
+# [IN ACTIVE DEVELOPMENT - DO NOT USE YET]
+
 # AccelByte Code Generator
 
 ## CLI
@@ -16,6 +18,11 @@ Commands:
   render
   renderc
 ```
+
+> :bulb: You will have to use `chmod +x accelbyte-codegen` to allow the file to be executed.
+
+> :bulb: All the examples demonstrate the use of the `accelbyte-codegen` executable file, although the filename may vary
+> in your specific scenario, for instance, as `accelbyte-codegen-linux_amd64`.
 
 ### [Tutorials](docs/tutorials)
 

@@ -44,17 +44,33 @@ To use it, we set the import path as either our `-i/--input-processor` or `-t/--
 ```text
 Usage: accelbyte-codegen render [OPTIONS] INPUT TEMPLATE
 
+  Renders the TEMPLATE using the specified INPUT.
+
+  INPUT: Input value to be passed into the templating engine.  [required]
+  TEMPLATE: Template value used to create the template object.  [required]
+
 Options:
-  -i, --input-processor TEXT     [default: yamlf]
-  -t, --template-processor TEXT  [default: textf]
-  -r, --renderer TEXT            [default: default]
-  -e, --extension TEXT           [casestyle|collections|ctrlflow|datetime|file
-                                 contents|jsonptr|regex|safecast|string|jinja2
-                                 .ext.do|jinja2.ext.loopcontrols]  [default:
-                                 *default, *jinja]
-  -l, --loader TEXT
-  -o, --output TEXT              [stdout|stderr|<filepath>]  [default: stdout]
-  --help                         Show this message and exit.
+  -i, --input-processor TEXT      Sets the processor to use for the INPUT
+                                  argument.  [default: yamlf]
+  -t, --template-processor TEXT   Sets the processor to use for the TEMPLATE
+                                  argument.  [default: textf]
+  -r, --renderer TEXT             Sets the renderer to use.  [default:
+                                  default]
+  -e, --extension TEXT            Additional extensions to use in the template
+                                  environment.  [casestyle|collections|ctrlflo
+                                  w|datetime|filecontents|jsonptr|regex|safeca
+                                  st|string|jinja2.ext.do|jinja2.ext.loopcontr
+                                  ols]  [default: *default, *jinja]
+  -l, --loader TEXT               Additional template search paths to use in
+                                  the template environment.
+  -o, --output TEXT               Sets the output target.
+                                  [stdout|stderr|<filepath>]  [default:
+                                  stdout]
+  --inspect [0|n|no|1|y|yes|2|v|verbose]
+                                  Simulates the command and displays
+                                  information about the template environment.
+                                  [default: 0]
+  --help                          Show this message and exit.
 ```
 
 ---
