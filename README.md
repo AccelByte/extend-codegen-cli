@@ -28,5 +28,5 @@ Commands:
 
 Here's a list of the tutorials:
 
-- [Using the render command](docs/tutorials/render/tutorial.md)
-- [Extending the render command](docs/tutorials/extending-render/tutorial.md)
+- [Using the render command](docs/01-render/tutorial.md)
+- [Extending the render command](docs/02-extending-render/tutorial.md)
