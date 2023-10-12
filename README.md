@@ -1,5 +1,3 @@
-# [IN ACTIVE DEVELOPMENT - DO NOT USE YET]
-
 # AccelByte Code Generator
 
 ## CLI
