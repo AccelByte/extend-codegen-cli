@@ -17,10 +17,9 @@ Commands:
   renderc
 ```
 
-> :bulb: You will have to use `chmod +x accelbyte-codegen` to allow the file to be executed.
+> :bulb: You may have to use `chmod +x accelbyte-codegen` to allow the file to be executed.
 
-> :bulb: All the examples demonstrate the use of the `accelbyte-codegen` executable file, although the filename may vary
-> in your specific scenario, for instance, as `accelbyte-codegen-linux_amd64`.
+> :bulb: Some examples demonstrate the use of the `accelbyte-codegen` executable file, with the filename potentially varying in your specific scenario such as `accelbyte-codegen-linux_amd64` or `accelbyte-codegen-windows_amd64`, depending on your operating system.
 
 ### [Tutorials](docs/tutorials)
 
