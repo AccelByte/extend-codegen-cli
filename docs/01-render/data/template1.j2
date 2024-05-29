@@ -1,5 +1,0 @@
-{# data/template1.j2 -#}
-
-{% for _ in range(3) %}
-It's {{ villains[range(villains | count) | random] | to_camel }}, help me {{ superheroes[range(superheroes | count) | random] | to_camel }}!
-{% endfor %}

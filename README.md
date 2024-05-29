@@ -1,29 +1,32 @@
-# AccelByte Code Generator
+# Extend Codegen CLI
 
-## CLI
+A tool for generating an AccelByte SDK module or plugin for custom services,
+such as services created using Extend Service Extension.
 
-```shell
-./accelbyte-codegen --help
-```
+:exclamation: **This repository contains the codegen template pack zip 
+releases only.**
 
-```text
-Usage: accelbyte-codegen [OPTIONS] COMMAND [ARGS]...
+## Overview
 
-Options:
-  --help  Show this message and exit.
+The Extend Codegen consists of a CLI app and some template packs. The CLI app is
+released as container images in 
+[Docker Hub](https://hub.docker.com/r/accelbyte/extend-codegen-cli) while 
+the template pack zip files are released 
+[here](https://github.com/AccelByte/extend-codegen-cli/releases) 
+in this repository.
 
-Commands:
-  render
-  renderc
-```
+A template pack contains a `Makefile` and `Jinja` template files. When the
+`Makefile` command is invoked, the Extend Codegen CLI app is executed with the
+`Jinja` template files and a given custom service OpenAPI 2.0 JSON file to 
+generate code. The `Makefile` also fetches the specified CLI container image
+version if it is not available locally yet.
 
-> :bulb: You may have to use `chmod +x accelbyte-codegen` to allow the file to be executed.
+## General Usage
 
-> :bulb: Some examples demonstrate the use of the `accelbyte-codegen` executable file, with the filename potentially varying in your specific scenario such as `accelbyte-codegen-linux_amd64` or `accelbyte-codegen-windows_amd64`, depending on your operating system.
+1. Download the template pack zip for the corresponding AccelByte SDK module or
+plugin [here](https://github.com/AccelByte/extend-codegen-cli/releases) 
 
-### [Tutorials](docs/tutorials)
+2. Unzip the downloaded template pack zip file and follow the instruction in 
+the README.md inside.
 
-Here's a list of the tutorials:
-
-- [Using the render command](docs/01-render/tutorial.md)
-- [Extending the render command](docs/02-extending-render/tutorial.md)
+   

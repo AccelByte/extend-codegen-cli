@@ -1,6 +1,0 @@
-# data/config.yaml
-
-input: characters.json
-template: template1.j2
-loader:
-  - "misc"
